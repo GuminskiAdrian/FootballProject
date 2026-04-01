@@ -31,7 +31,7 @@ def get_todays_matches():
     matches = data["matches"]
 
     for match in matches:
-        print(f'{match['homeTeam']['name']} vs {match['awayTeam']['name']} - {match['utcDate'][11:16]}')
+        print(f'{match['competition']['name']} | {match['homeTeam']['name']} vs {match['awayTeam']['name']} - {match['utcDate'][11:16]}')
 
 
 get_todays_matches()
